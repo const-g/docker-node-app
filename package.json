@@ -1,11 +1,15 @@
 {
-  "name": "docker-node-application",
+  "name": "docker-node-app",
   "version": "1.0.0",
+  "description": "a first app using docker",
   "scripts": {
-    "start": "node server/server.js"
+    "dev": "nodemon --watch server server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
   }
 }
-

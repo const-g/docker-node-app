@@ -11,7 +11,7 @@ const app = express();
 const host = process.env.HOSTNAME || '0.0.0.0';
 
 app.get('/', (req, res) => {
-  res.send(`<h1>Hello world!!</h1><p>${host}</p>`);
+  res.send(`<h1>Hello world!!</h1><p>host: ${host}</p>`);
 });
 
 app.listen(PORT, HOST);
